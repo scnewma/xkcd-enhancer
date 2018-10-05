@@ -10,7 +10,7 @@
         let subtext = retrieveComicSubtext();
 
         let subtextP = document.createElement('p');
-        subtextP.innerHTML = subtext;
+        subtextP.appendChild(document.createTextNode(subtext));
 
         let subtextDiv = document.createElement('div');
         subtextDiv.id = comicSubtextId;
